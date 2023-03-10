@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block csslink %}<link rel="stylesheet" href="{% static 'parent.css' %}">{% endblock csslink %}
+    <title> {% block title %}temp-inheritance{% endblock title %}</title>
+</head>
+<body>
+
+<h1>{% block h1 %}What is a programming language?{% endblock h1 %}</h1>
+<h2>{% block content %} A programming language is a computer language that programmers use to create software. This way they are able to indicate to the programs the structure to be followed in order to make the process as safe as possible.
+
+Nowadays, there are many programming languages, so the programmer is free to choose the one he/she feels most comfortable with, the one that best suits what he/she is asked to do. {% endblock content %}</h2>
+<h1>{% block content_title_1 %}{% endblock content_title_1 %}</h1>
+<h3>{% block content2 %}{% endblock content2 %}</h3>
+</body>
+</html>

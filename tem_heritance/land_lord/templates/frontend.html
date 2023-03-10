@@ -1,0 +1,15 @@
+{% extends 'parent.html' %}
+
+{% load static %}
+
+{% block csslink %}  {{block.super}}<link rel="stylesheet" href="{% static 'frontend.css' %}"> {% endblock csslink %}
+
+{% comment %} in this block we override parent template file title {% endcomment %}
+{% block title %}Frontend{% endblock title %}
+
+{% block content_title_1 %}Frontend{% endblock content_title_1 %}
+{% block content2 %}The frontend is the part of the website that users can interact with. This is where the entire customer experience takes place and where the most detailed programming takes place.
+
+It’s also the part that is referred to as the interface and client side. Multimedia files, action buttons, colours and typography are some of the aspects that can be found on this side of the web.
+
+As we mentioned before, it’s important that the programmer knows your needs and requirements. This way, the structure of the website and the project in general will have the right specifications and will offer the user a more fluid and pleasant interface.{% endblock content2 %}

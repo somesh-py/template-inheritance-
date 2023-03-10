@@ -1,0 +1,15 @@
+{% extends 'parent.html' %}
+
+{% load static %}
+
+{% block csslink %}{{bloack.super}}<link rel="stylesheet" href="{% static 'backend.css' %}" >{% endblock csslink %}
+
+{% block title %}Backend{% endblock title %}
+
+{% block content_title_1 %}Backend{% endblock content_title_1 %}
+
+{% block content2 %}As a complement to the frontend, the backend is the non-visible part of the website. This is the server where the data of our portal is hosted, so it’s of utmost importance that the programmer does a good job.
+
+The backend is where all our data is stored and it’s the part of the site that users do not interact with directly. However, without this aspect of the page, the frontend would not be possible, so it plays an important role in the programming of the site.
+
+Both parts depend on each other to give an optimal and complete result, so it’s important that both are well programmed. For the site to work properly, both must be in tune with each other.{% endblock content2 %}
